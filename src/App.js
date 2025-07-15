@@ -1,5 +1,5 @@
 import React from 'react';
-import Dice from './Dice/Dice' // ✅ Путь обновлён
+import Dice from './Dice/Dice'
 
 export default function App() {
   return (

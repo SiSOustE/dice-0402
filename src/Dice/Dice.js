@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './Dice.css'; // Теперь импортируем стили как модуль
+import './Dice.css';
 
 const Dice = () => {
   const [diceValue, setDiceValue] = useState(1);
@@ -10,13 +10,13 @@ const Dice = () => {
   };
 
   return (
-    <div className={styles.diceContainer}>
+    <div className="dice-container">
       <img
-        src={`${process.env.PUBLIC_URL}/images/${diceValue}.svg`}
+        src={`/images/${diceValue}.svg`}
         alt={`Dice showing ${diceValue}`}
-        className={styles.diceImage}
+        className="dice-image"
       />
-      <button onClick={rollDice} className={styles.rollButton}>
+      <button onClick={rollDice} className="dice-button">
         Бросить кубик
       </button>
     </div>
