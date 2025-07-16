@@ -1,18 +1,22 @@
-.dice-container {
+/* Dice.css — теперь это CSS Module */
+.diceContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.dice-image {
+
+.diceImage {
   width: 200px;
   height: 200px;
   margin-bottom: 1.5rem;
   transition: transform 0.3s ease;
 }
-.dice-image:hover {
+
+.diceImage:hover {
   transform: scale(1.1);
 }
-.dice-button {
+
+.rollButton {
   background-color: #3498db;
   border: none;
   color: white;
@@ -20,9 +24,10 @@
   font-size: 1rem;
   border-radius: 8px;
   cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease;
 }
-.dice-button:hover {
+
+.rollButton:hover {
   background-color: #2980b9;
 }
