@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import styles from './Dice.css' // Теперь импортируем стили как модуль
+import styles from './Dice.module.css' // Теперь импортируем стили как модуль
 
 const Dice = () => {
 	const [diceValue, setDiceValue] = useState(1)
